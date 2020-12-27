@@ -42,4 +42,22 @@ $(function () {
     		$('.section3').hide();
     	}
     });
+
+    function submitForm() {
+	    $.ajax({
+	        url:'https://api.apispreadsheets.com/data/5636/',
+	        type:'post',
+	        data:$("#guest-form").serializeArray(),
+	        success: function(){
+	            alert("Your RSVP has been submitted! We look forward to meeting you on our big day!");
+	        },
+	        error: function(){
+	            alert("There was an error, please try to submit the form later.");
+	        }
+	    });
+	}
+
+	$('#form-submit').click(function() {
+		submitForm();
+	});
 });
