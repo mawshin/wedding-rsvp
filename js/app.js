@@ -81,7 +81,15 @@ $(function () {
     	}
     });
 
+    $('#guest-form').on('change', 'select.error', function (e) {
+	    if($(e.target).val() != '') {
+    		$(this).removeClass('error').addClass('valid');
+    		$(this).next().hide();
+    	}
+	});
+
     function submitForm() {
+	    console.log('here');
 	    $.ajax({
 	        url: '//api.apispreadsheets.com/data/5636/',
 	        type: 'post',
@@ -95,18 +103,17 @@ $(function () {
 	    });
 	}
 
-	function validateForm() {
-		if ($.trim($("#email").val()) === "" || $.trim($("#user_name").val())) {
-	        e.preventDefault();
-	        alert('you did not fill out one of the fields');
-	        //You can return false here as well
-	    }
-
-	}
-
 	$('#form-submit').click(function() {
-		if($('#guest-form')[0].checkValidity()) {
+		var form = $('#guest-form');
+
+		form.validate({
+		    focusInvalid: true
+		});
+
+		if(form.valid()) {
+	        console.log('submit');
 	        submitForm();
 	    }
+
 	});
 });

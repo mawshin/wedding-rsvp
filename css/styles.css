@@ -16,9 +16,20 @@ textarea {
 	resize: vertical;
 }
 
-input:invalid:focus,
-select:invalid:focus {
+input:focus,
+select:focus {
+  border: 2px solid #333;
+}
+
+input.error,
+select.error,
+input.error:focus,
+select.error:focus {
   border: 2px solid #c83039;
+}
+
+.error {
+	color: #c83039;
 }
 
 .additional-section {
@@ -53,7 +64,10 @@ select:invalid:focus {
 }
 
 .btn-primary:hover,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
 .btn-primary:active {
 	background-color: #c5aa9e;
 	border-color: #c5aa9e;
+	outline: 0;
 }
