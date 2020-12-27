@@ -16,10 +16,8 @@ textarea {
 	resize: vertical;
 }
 
-input:invalid,
-input:invalid:required,
-select:invalid,
-select:invalid:required {
+input:invalid:focus,
+select:invalid:focus {
   border: 2px solid #c83039;
 }
 
