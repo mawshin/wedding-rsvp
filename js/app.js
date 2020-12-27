@@ -45,7 +45,7 @@ $(function () {
 
     function submitForm() {
 	    $.ajax({
-	        url:'https://api.apispreadsheets.com/data/5636/',
+	        url:'//api.apispreadsheets.com/data/5636/',
 	        type:'post',
 	        data:$("#guest-form").serializeArray(),
 	        success: function(){
@@ -58,6 +58,8 @@ $(function () {
 	}
 
 	$('#form-submit').click(function() {
-		submitForm();
+		if ($("#guest-form").valid()) { 
+            submitForm();
+        }
 	});
 });
