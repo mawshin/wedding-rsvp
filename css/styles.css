@@ -2,6 +2,10 @@ html, body {
 	color: #333;
 }
 
+body {
+	padding: 32px 0;
+}
+
 .mt16 {
 	margin-top: 16px;
 }
