@@ -89,7 +89,6 @@ $(function () {
 	});
 
     function submitForm() {
-	    console.log('here');
 	    $.ajax({
 	        url: '//api.apispreadsheets.com/data/5636/',
 	        type: 'post',
@@ -113,7 +112,6 @@ $(function () {
 		});
 
 		if(form.valid()) {
-	        console.log('submit');
 	        submitForm();
 	    }
 
