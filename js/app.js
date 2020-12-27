@@ -89,6 +89,7 @@ $(function () {
 	});
 
     function submitForm() {
+	    console.log('here');
 	    $.ajax({
 	        url: '//api.apispreadsheets.com/data/5636/',
 	        type: 'post',
@@ -96,7 +97,7 @@ $(function () {
 	        success: function(){
 	            alert('Your RSVP has been submitted! We look forward to meeting you on our big day!');
 
-	            $("#guest-form")[0].reset();
+	            $('#guest-form')[0].reset();
 	        },
 	        error: function(){
 	            alert('There was an error, please try to submit the form later.');
@@ -112,6 +113,7 @@ $(function () {
 		});
 
 		if(form.valid()) {
+	        console.log('submit');
 	        submitForm();
 	    }
 
