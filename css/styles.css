@@ -6,6 +6,10 @@ html, body {
 	margin-top: 16px;
 }
 
+p {
+	max-width: 780px;
+}
+
 h1 {
 	font-family: 'Sacramento', cursive;
 	background-color: #e6c9bb;
