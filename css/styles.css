@@ -64,6 +64,7 @@ select.error:focus {
 }
 
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active:hover,
 .btn-primary:active:focus,
 .btn-primary:active {
