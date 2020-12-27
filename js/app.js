@@ -96,6 +96,8 @@ $(function () {
 	        data: $('#guest-form').serializeArray(),
 	        success: function(){
 	            alert('Your RSVP has been submitted! We look forward to meeting you on our big day!');
+
+	            $("#guest-form")[0].reset();
 	        },
 	        error: function(){
 	            alert('There was an error, please try to submit the form later.');
