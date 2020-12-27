@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Maw Shin & Anna Wedding - 27 February 2021 (Sat) 12.30pm | the SUMMERHOUSE, Selectar Areospace Park, 3 Park Lane, Singapore 798387">
+    <meta name="keywords" content="Maw Shin, Anna, 27 February 2021">
+
+	<title>Maw Shin & Anna Wedding RSVP form</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="images/banner.png" class="img-responsive" alt="Maw Shin & Anna Wedding - 27 February 2021 (Sat) 12.30pm">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h1>Maw Shin & Anna Wedding RSVP</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <note>* All fields below are mandatory, unless noted as optional</note>
+                <form class="mt16">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" class="form-control" name="full_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attending">Will you be able to attend our wedding?</label>
+                        <select id="attending" name="attend" class="form-control" required>
+                            <option value="">Please select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group additional-section section2">
+                        <label for="food">Please indicate your choice of Main course / dietary option:</label>
+                        <select id="food" name="diet_preference" class="form-control" required>
+                            <option value="">Please select</option>
+                            <optgroup label="Standard">
+                                <option value="Seared fillet of barramundi">Seared fillet of barramundi</option>
+                                <option value="Roasted French chicken">Roasted French chicken</option>
+                                <option value="Smoked pork collar">Smoked pork collar</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option value="Halal">Halal</option>
+                                <option value="Vegetarian">Vegetarian</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group additional-section section2">
+                        <label for="allergy">Please help note to us if you have any food allergies? (Optional)</label>
+                        <textarea class="form-control" rows="3" name="food_allergy" id="allergy" placeholder="Please leave this field empty if you do not have any allergies that we should flag to the kitchen"></textarea>
+                    </div>
+                    <div class="form-group additional-section section2">
+                        <label for="additional_guest">Will you be bringing additional guest(s)? 
+                        <a tabindex="0" data-toggle="popover" data-trigger="hover" title="Additional guest(s)" data-content="Spouse / partner / children"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a>
+                        </label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="additional_guest" id="optionsRadios1" value="0" checked>
+                                <strong>I will not be bringing additional guest.</strong>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="additional_guest" id="optionsRadios2" value="1 additional guest">
+                                <strong>1 additional guest</strong> will be coming with me.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="additional_guest" id="optionsRadios3" value="2 additional guests">
+                                <strong>2 additional guests</strong> will be coming with me.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="additional_guest" id="optionsRadios4" value="3 additional guests">
+                                <strong>3 additional guests</strong> will be coming with me.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="additional_guest" id="optionsRadios5" value="4 additional guests">
+                                <strong>4 additional guests</strong> will be coming with me.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="additional-section section3">
+                        <div class="guest1">
+                            <hr>
+                            <h4>Additional guest 1</h4>
+
+                            <div class="form-group">
+                                <label for="guestname">Guest name</label>
+                                <input id="guestname" type="text" class="form-control" name="additional_guest_fullname1" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestfood">Please indicate your choice of Main course / dietary option:</label>
+                                <select id="guestfood" name="additional_guest_diet_preference1" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <optgroup label="Standard">
+                                        <option value="Seared fillet of barramundi">Seared fillet of barramundi</option>
+                                        <option value="Roasted French chicken">Roasted French chicken</option>
+                                        <option value="Smoked pork collar">Smoked pork collar</option>
+                                    </optgroup>
+                                    <optgroup label="Others">
+                                        <option value="Halal">Halal</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Kid's meal">Kid's meal</option>
+                                        <option value="Toddler (would not need to cater food)">Toddler (would not need to cater food)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestallergy">Please help note to us if you have any food allergies? (Optional)</label>
+                                <textarea class="form-control" rows="3" name="food_allergy1" id="guestallergy" placeholder="Please leave this field empty if you do not have any allergies that we should flag to the kitchen"></textarea>
+                            </div>
+                            <div class="form-group babychair-wrapper">
+                                <label for="babychair">Would you require a baby chair?</label>
+                                <select id="babychair" name="baby_chair1" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="guest2">
+                            <hr>
+                            <h4>Additional guest 2</h4>
+                        
+                            <div class="form-group">
+                                <label for="guestname2">Guest name</label>
+                                <input id="guestname2" type="text" class="form-control" name="additional_guest_fullname2" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestfood2">Please indicate your choice of Main course / dietary option:</label>
+                                <select id="guestfood2" name="additional_guest_diet_preference2" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <optgroup label="Standard">
+                                        <option value="Seared fillet of barramundi">Seared fillet of barramundi</option>
+                                        <option value="Roasted French chicken">Roasted French chicken</option>
+                                        <option value="Smoked pork collar">Smoked pork collar</option>
+                                    </optgroup>
+                                    <optgroup label="Others">
+                                        <option value="Halal">Halal</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Kid's meal">Kid's meal</option>
+                                        <option value="Toddler (would not need to cater food)">Toddler (would not need to cater food)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestallergy2">Please help note to us if you have any food allergies? (Optional)</label>
+                                <textarea class="form-control" rows="3" name="food_allergy2" id="guestallergy2" placeholder="Please leave this field empty if you do not have any allergies that we should flag to the kitchen"></textarea>
+                            </div>
+                            <div class="form-group babychair-wrapper">
+                                <label for="babychair2">Would you require a baby chair?</label>
+                                <select id="babychair2" name="baby_chair2" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="guest3">
+                            <hr>
+                            <h4>Additional guest 3</h4>
+                        
+                            <div class="form-group">
+                                <label for="guestname3">Guest name</label>
+                                <input id="guestname3" type="text" class="form-control" name="additional_guest_fullname3" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestfood3">Please indicate your choice of Main course / dietary option:</label>
+                                <select id="guestfood3" name="additional_guest_diet_preference3" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <optgroup label="Standard">
+                                        <option value="Seared fillet of barramundi">Seared fillet of barramundi</option>
+                                        <option value="Roasted French chicken">Roasted French chicken</option>
+                                        <option value="Smoked pork collar">Smoked pork collar</option>
+                                    </optgroup>
+                                    <optgroup label="Others">
+                                        <option value="Halal">Halal</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Kid's meal">Kid's meal</option>
+                                        <option value="Toddler (would not need to cater food)">Toddler (would not need to cater food)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestallergy3">Please help note to us if you have any food allergies? (Optional)</label>
+                                <textarea class="form-control" rows="3" name="food_allergy3" id="guestallergy3" placeholder="Please leave this field empty if you do not have any allergies that we should flag to the kitchen"></textarea>
+                            </div>
+                            <div class="form-group babychair-wrapper">
+                                <label for="babychair3">Would you require a baby chair?</label>
+                                <select id="babychair3" name="baby_chair3" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="guest4">
+                            <hr>
+                            <h4>Additional guest 4</h4>
+                        
+                            <div class="form-group">
+                                <label for="guestname4">Guest name</label>
+                                <input id="guestname4" type="text" class="form-control" name="additional_guest_fullname4" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestfood4">Please indicate your choice of Main course / dietary option:</label>
+                                <select id="guestfood4" name="additional_guest_diet_preference4" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <optgroup label="Standard">
+                                        <option value="Seared fillet of barramundi">Seared fillet of barramundi</option>
+                                        <option value="Roasted French chicken">Roasted French chicken</option>
+                                        <option value="Smoked pork collar">Smoked pork collar</option>
+                                    </optgroup>
+                                    <optgroup label="Others">
+                                        <option value="Halal">Halal</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Kid's meal">Kid's meal</option>
+                                        <option value="Toddler (would not need to cater food)">Toddler (would not need to cater food)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestallergy4">Please help note to us if you have any food allergies? (Optional)</label>
+                                <textarea class="form-control" rows="3" name="food_allergy4" id="guestallergy4" placeholder="Please leave this field empty if you do not have any allergies that we should flag to the kitchen"></textarea>
+                            </div>
+                            <div class="form-group babychair-wrapper">
+                                <label for="babychair4">Would you require a baby chair?</label>
+                                <select id="babychair4" name="baby_chair4" class="form-control" required>
+                                    <option value="">Please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="//code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+</body>

@@ -1,0 +1,61 @@
+html, body {
+	color: #333;
+}
+
+.mt16 {
+	margin-top: 16px;
+}
+
+h1 {
+	background-color: #e6c9bb;
+	text-align: center;
+	padding: 8px; 
+}
+
+textarea {
+	resize: vertical;
+}
+
+input:invalid,
+input:invalid:required,
+select:invalid,
+select:invalid:required {
+  border: 2px solid #c83039;
+}
+
+.additional-section {
+	display: none;
+}
+
+.babychair-wrapper {
+	display: none;
+	margin-top: 16px;
+}
+
+.guest1,
+.guest2,
+.guest3,
+.guest4 {
+	display: none;
+}
+
+[class^="guest"] h4 {
+	background-color: #e6c9bb;
+	color: #333; 
+	display: inline-block;
+	padding: 8px;
+}
+
+.btn-primary {
+	background-color: #e6c9bb;
+	border-color: #c5aa9e;
+	color: #333;
+	font-weight: bold;
+	transition: background-color 0.5s;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #c5aa9e;
+	border-color: #c5aa9e;
+}
