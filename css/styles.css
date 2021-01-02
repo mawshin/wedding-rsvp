@@ -10,14 +10,18 @@ body {
 	margin-top: 16px;
 }
 
-a {
+a:not([data-toggle]) {
 	color: black;
 	background-color: #e6c9bb;
 	padding: 2px 6px;
 }
 
-a:hover,
-a:focus {
+a[data-toggle] {
+	color: #c5aa9e;
+}
+
+a:not([data-toggle]):hover,
+a:not([data-toggle]):focus {
 	background-color: #c5aa9e;
 	color: white;
 }
@@ -54,8 +58,22 @@ select.error:focus {
 }
 
 .error .radio,
-.error h5 {
+.error h5,
+.error label:not(.error) {
 	color: #333;
+}
+
+.error input[type='radio']:after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #c83039;
 }
 
 .navbar-inverse {
