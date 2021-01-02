@@ -53,6 +53,11 @@ select.error:focus {
 	color: #c83039;
 }
 
+.error .radio,
+.error h5 {
+	color: #333;
+}
+
 .navbar-inverse {
     background-color: #e6c9bb;
     border-color: #c5aa9e;
