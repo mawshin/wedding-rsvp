@@ -3,11 +3,23 @@ html, body {
 }
 
 body {
-	padding: 0 0 32px;
+	padding: 70px 0 32px;
 }
 
 .mt16 {
 	margin-top: 16px;
+}
+
+a {
+	color: black;
+	background-color: #e6c9bb;
+	padding: 2px 6px;
+}
+
+a:hover,
+a:focus {
+	background-color: #c5aa9e;
+	color: white;
 }
 
 p {
@@ -39,6 +51,30 @@ select.error:focus {
 
 .error {
 	color: #c83039;
+}
+
+.navbar-inverse {
+    background-color: #e6c9bb;
+    border-color: #c5aa9e;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #c5aa9e;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus, 
+.navbar-inverse .navbar-nav > .active > a:hover {
+	background-color: #c5aa9e;
+	color: white;
+}
+
+.page-header.no-bdr {
+    border-bottom: none;
 }
 
 .additional-section {
